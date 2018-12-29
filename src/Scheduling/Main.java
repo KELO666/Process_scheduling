@@ -15,7 +15,7 @@ public class Main {
 			System.out.println("******************************");
 			System.out.println("1、先来先服务");
 			System.out.println("2、简单轮转法");
-			System.out.println("3、多级反馈队列");
+//			System.out.println("3、多级反馈队列");
 			System.out.println("3、退出");
 			System.out.println("******************************");
 			System.out.println("请选择你想要的调度算法：");
@@ -25,15 +25,15 @@ public class Main {
 			switch(key){
 				case 1: 
 						Util.init(list);
-						fcfs.fcfs(list);
+						fcfs.fcfs(list); 
 						fcfs.input(list);
 						break;
 				case 2: 
 						Util.init(list);
 						rotation.rotation(list);
 						break;
-				case 3: 
-				case 4: break;
+				case 3: break;
+//				case 4: break;
 			}
 			if(key == 3){
 				break;
